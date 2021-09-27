@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/springbootsampleapp-1.0-SNAPSHOT.jar springbootsampleapp-1.0-SNAPSHOT.jar
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "springbootsampleapp-1.0-SNAPSHOT.jar"]
